@@ -1,0 +1,31 @@
+.features-section {
+  padding: 3rem 0;
+  background-color: #eaf4ff;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #0d6efd;
+}
+
+.feature-image {
+  max-height: 300px;
+}
+
+.features-title {
+  font-weight: bold;
+  color: #0d6efd; /* Bootstrap primary */
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.features-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 7px;
+  margin: 12px auto 0 auto;
+  background: linear-gradient(90deg, #6366f1 60%, #ef4444 100%);
+  border-radius: 4px;
+}

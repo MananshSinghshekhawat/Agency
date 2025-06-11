@@ -1,0 +1,37 @@
+.Navbar-section{
+    background-color: #f0f8ff;
+}
+
+.navbar-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-title {
+  text-decoration: none;
+ /* color: none; */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-button {
+  color: var(--mui-palette-text-primary);
+  margin: 0 8px;
+  text-transform: none;
+}
+
+.color-w { color: #e53935; }
+.color-o { color: #d81b60; }
+.color-r { color: #8e24aa; }
+.color-k { color: #3949ab; }
+.color-b { color: #1e88e5; }
+.color-e { color: #00897b; }
+.color-n { color: #43a047; }
+.color-c { color: #fbc02d; }
+.color-h { color: #fb8c00; }
+ 

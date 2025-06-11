@@ -1,0 +1,119 @@
+/* Home.css */
+
+#home {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 0 48px;
+  text-align: left;
+  background: linear-gradient(135deg, #f5fcff 0%, #eaf9ff 50%, #ffffff 100%);
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #334e68;
+}
+
+.home-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.home-heading {
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  color: #005fa3;
+  text-shadow: 0 2px 6px rgba(0, 95, 163, 0.1);
+}
+
+.home-subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #005fa3;
+}
+
+.home-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #334e68;
+  margin-bottom: 24px;
+}
+
+.home-button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #c82333;
+}
+
+.image-container {
+  flex: 0 0 50%;
+  text-align: center;
+  z-index: 2;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  filter: blur(60px);
+  opacity: 0.5;
+  animation: blob 7s infinite;
+}
+
+.blob1 {
+  width: 160px;
+  height: 160px;
+  background-color: #d4f1ff;
+  top: 40px;
+  left: 40px;
+}
+
+.blob2 {
+  width: 288px;
+  height: 288px;
+  background-color: #e0f7ff;
+  top: 80px;
+  right: 80px;
+  animation-delay: 2s;
+}
+
+.blob3 {
+  width: 240px;
+  height: 240px;
+  background-color: #f0fbff;
+  bottom: 80px;
+  left: 80px;
+  animation-delay: 4s;
+}
+
+@keyframes blob {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}

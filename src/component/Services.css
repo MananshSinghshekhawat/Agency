@@ -1,0 +1,91 @@
+.services-modern-section {
+  background: linear-gradient(to right, #dbeafe, #f0f9ff);
+  padding: 5rem 1rem;
+  min-height: 100vh;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-header h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  color:rgb(5, 15, 29);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-modern-card {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-modern-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 123, 255, 0.2);
+}
+
+.icon-wrapper {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: white;
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.service-modern-card h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: #0f172a;
+}
+
+.service-modern-card p {
+  font-size: 0.95rem;
+  color: #334155;
+  margin-top: 0.5rem;
+}
+
+.services-title {
+  font-weight: bold;
+  color: #0d6efd; /* Bootstrap primary */
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.services-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 7px;
+  margin: 12px auto 0 auto;
+  background: linear-gradient(90deg, #6366f1 60%, #ef4444 100%);
+  border-radius: 4px;
+}
