@@ -1,3 +1,20 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://workbenchindia.com/sitemap.xml
+
+# Allow crawling of important directories
+Allow: /about
+Allow: /services
+Allow: /portfolio
+Allow: /contact
+
+# Disallow crawling of unnecessary directories
+Disallow: /admin/
+Disallow: /api/
+Disallow: /node_modules/
+
+# Allow crawling of static assets
+Allow: /images/
+Allow: /css/
+Allow: /js/

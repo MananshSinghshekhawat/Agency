@@ -1,6 +1,7 @@
 .testimonials-section {
-  background:  #eaf4ff;
-  padding: 70px 0;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  color: var(--text-color);
 }
 
 .testimonials-grid {

@@ -1,3 +1,47 @@
+/* App.css */
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+}
+
+/* Section spacing */
+.section {
+  padding: 4rem 0;
+}
+
+/* First section (Home) */
+#home {
+  padding-top: 8rem;
+}
+
+/* Last section (Contact) */
+#contact {
+  padding-bottom: 8rem;
+}
+
+/* Navbar fixed positioning */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Footer spacing */
+footer {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  border-top: 1px solid #e2e8f0;
+}
+
 .App {
   text-align: center;
 }

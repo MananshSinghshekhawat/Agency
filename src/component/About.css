@@ -1,8 +1,9 @@
 /* About.css */
 
-#about {
-  padding: 3rem 0;
-  background-color: #eaf4ff;
+.about-section {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  color: var(--text-color);
 }
 
 .about-header {

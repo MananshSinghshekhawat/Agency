@@ -14,16 +14,15 @@ import {
   useTheme,
   useMediaQuery
 } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-import './Navbar.css'; // Import the CSS file
+import './Navbar.css';
 
 const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Features', href: '#features' },
-  { label: 'Testimonials', href: '#testimonials' },
-  { label: 'Contact', href: '#contact' }
+  { label: 'Home', path: '/' },
+  { label: 'About', path: '/about' },
+  { label: 'Services', path: '/services' },
+  { label: 'Contact', path: '/contact' }
 ];
 
 const Navbar: React.FC = () => {
@@ -40,7 +39,7 @@ const Navbar: React.FC = () => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
-            <ListItemButton component="a" href={item.href}>
+            <ListItemButton component={RouterLink} to={item.path}>
               <ListItemText primary={item.label} />
             </ListItemButton>
           </ListItem>
@@ -90,8 +89,8 @@ const Navbar: React.FC = () => {
               {navItems.map((item) => (
                 <Button
                   key={item.label}
-                  component="a"
-                  href={item.href}
+                  component={RouterLink}
+                  to={item.path}
                   className="navbar-button"
                 >
                   {item.label}

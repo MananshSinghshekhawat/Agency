@@ -1,6 +1,5 @@
 .services-modern-section {
-  background: linear-gradient(to right, #dbeafe, #f0f9ff);
-  padding: 5rem 1rem;
+  background: #ffffff;
   min-height: 100vh;
 }
 
@@ -12,13 +11,13 @@
 .services-header h2 {
   font-size: 2.8rem;
   font-weight: 800;
-  color: #007bff;
+  color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
 .services-header p {
   font-size: 1.1rem;
-  color:rgb(5, 15, 29);
+  color: var(--text-color);
   max-width: 700px;
   margin: 0 auto;
 }
